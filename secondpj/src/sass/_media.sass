@@ -1,0 +1,182 @@
+@media (max-width: 1200px)
+    .menu
+        &_link
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 50px        
+@media (max-width: 991px)
+    .menu
+        &_link
+            font-size: 10px
+    .menu .menu_item
+        padding-right: 20px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_descr
+            font-size: 11px
+        &_phone
+            font-size: 18px
+        &_btn
+            margin-top: 26px
+            width: 113px
+            height: 34px
+            font-size: 10px
+    .promo
+        &_header
+            font-size: 38px
+        &_subheader
+            font-size: 26px
+            margin-top: 11px
+        &_descr
+            font-size: 16px
+            margin-top: 10px
+        &_btn
+            width: 200px
+            font-size: 15px
+            height: 51px
+    .promo_logos
+        .main_item
+            font-size: 30px  
+        .main_wrapper
+            flex-direction: column
+            align-items: center
+            .main_text
+                margin-top: 20px
+    .mobile
+        .main_item
+            font-size: 30px
+        .subtitle
+            font-size: 14px
+        &_item_subtitle 
+            font-size: 17px
+    .car
+        &_main_item_2
+            font-size: 30px
+        &_subtitle_2
+            font-size: 14px
+    .finish
+        &_links
+            width: 13%
+            flex-direction: column
+            justify-content: space-between
+            padding-bottom: 14px
+            margin-top: 0px
+        &_social_sites
+            display: block
+            width: 13%
+        &_media
+            margin-top: 0px
+            padding-left: 0px
+            margin-bottom: 0px
+@media (max-width: 767px)
+    .phone_sizing
+        height: 50px
+        width: 100%
+        background-color: black
+    header
+        // display: none
+        position: relative
+    nav
+        display: flex
+        top: 0
+        width: 50%
+        height: 100vh
+        left: -100%
+        transition: all .6s
+        &.active
+            left: 0
+
+    .menu
+        margin-top: 0
+        justify-content: space-around 
+        flex-direction: column
+        height: 100%
+        
+        &_link
+            font-size: 20px 
+        .menu_item
+            padding-right: 0
+            border: none
+    .subheader
+        margin-top: 0
+        &_descr
+            display: none
+        &_call
+            display: none
+        &_phone
+            display: flex
+            justify-content: center
+            margin-top: 9px
+        .run
+            display: flex
+            justify-content: center
+        &_btn
+            margin-top: -12px
+            width: 160px
+            height: 30px
+            font-size: 15px
+        &_logo
+            margin-top: 26px
+    .phone_sizing
+        .hamburger
+            display: block
+            position: absolute
+            right: 10px
+            top: 50px
+            width: 26px
+            span
+                display: flex
+                height: 2px  
+                width: 100%
+                background-color: #fff
+                margin-bottom: 3px
+                transform: translateY(-33px)
+                transition: .5s all
+            &_active
+                margin-top: -26px
+                span
+                    margin-bottom: -2px
+                    transform: 
+                    &:nth-child(1)
+                        transform: rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: rotate(45deg)
+
+
+    .finish
+        &_wrapper
+            display: flex
+            flex-direction: column
+        &_social_sites
+            width: 100%
+            display: flex
+            justify-content: center
+            flex-direction: row
+            order: 2
+            padding-left: 7px
+            margin-top: 17px
+        &_links
+            width: 100%
+            display: flex
+            flex-direction: row
+            order: 3
+            justify-content: center
+            padding-left: 10px
+            margin-top: 19px
+        &_linkss
+            padding-left: 10px
+        &_media
+            padding-left: 7px
+    .car
+        &_main
+            img
+                width: 80%
+    p
+        text-align: center
+        br
+            display: none
